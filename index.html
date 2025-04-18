@@ -3,192 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdallah Ali - Portfolio</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>Abdallah Ali - ML Engineer Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-	<link rel="icon" type="image/png" href="images/img.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+    <canvas class="canvas"></canvas>
+    <div class="overlay"></div>
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/abdallah2a/" target="_blank" title="LinkedIn" class="linkedin-icon"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Abdallah2A" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" target="_blank" title="CV"><i class="fas fa-file-download"></i></a>
+    </div>
     <div class="main">
-        <div class="canvas">
-            <canvas class="canvas-2"></canvas>
+        <div class="bio-section">
+            <img src="images/logo.png" alt="Abdallah Ali Profile" class="profile-img">
+            <div class="content-header">
+                <h3>Abdallah Ali Hassan</h3>
+            </div>
+            <p><strong>Junior Machine Learning Engineer</strong></p>
+            <p>Recent Computer & Information Science graduate proficient in Python and machine learning, eager to drive innovation and grow professionally.</p>
         </div>
-        <div class="container">
-            <div class="profile-section">
-                <div class="projects-circle">
-                    <div class="project active" data-section="objective">
-                        <div class="project-icon">Abdallah Ali Hassan</div>
-                    </div>
-                    <div class="project" data-section="education">
-                        <div class="project-icon">Education</div>
-                    </div>
-                    <div class="project" data-section="certifications">
-                        <div class="project-icon">Certifications</div>
-                    </div>
-                    <div class="project" data-section="skills">
-                        <div class="project-icon">Skills</div>
-                    </div>
-                    <div class="project" data-section="projects">
-                        <div class="project-icon">Projects</div>
-                    </div>
-                    <div class="project" data-section="languages">
-                        <div class="project-icon">Languages</div>
+        <div class="card-grid">
+            <div class="card" data-section="education">
+                <i class="fas fa-graduation-cap"></i>
+                <h2>Education</h2>
+            </div>
+            <div class="card" data-section="certifications">
+                <i class="fas fa-certificate"></i>
+                <h2>Certifications</h2>
+            </div>
+            <div class="card" data-section="skills">
+                <i class="fas fa-tools"></i>
+                <h2>Skills</h2>
+            </div>
+            <div class="card" data-section="projects">
+                <i class="fas fa-project-diagram"></i>
+                <h2>Projects</h2>
+            </div>
+            <div class="card" data-section="languages">
+                <i class="fas fa-language"></i>
+                <h2>Languages</h2>
+            </div>
+        </div>
+        <div class="full-screen-content">
+            <button class="close-btn"><i class="fas fa-times"></i></button>
+            <div class="content" id="education">
+                <div class="content-header">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Education</h3>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-card">
+                        <h4>College (2020 - 2024)</h4>
+                        <p>Bachelor’s in Computer Science, Faculty of Computing and Information, Assiut University</p>
+                        <p>Relevant Courses: Calculus I, Calculus II, Statistics, Data Mining, Parallel Programming, Image Processing, Computer Vision, Machine learning</p>
                     </div>
                 </div>
             </div>
-            <!-- Description Section -->
-            <div class="description-section">
-                <div id="description">
-                    <!-- Objective -->
-                    <div id="objective" class="content active">
-                        <div class="line-by-line-typewriter">
-                            <p class="line">Passionate about discovering new things and understanding complex systems.</p>
-                            <p class="line">Seeking a role as a Software Engineer or Machine Learning Engineer to apply my skills and contribute to innovative solutions.</p>
-                        </div>
-
-						<!-- LinkedIn and GitHub Icons -->
-						<div class="social-icons">
-							<a href="https://www.linkedin.com/in/abdallah2a/" target="_blank" class="linkedin-link floating">
-								<i class="fa-brands fa-linkedin"></i>
-							</a>
-							<a href="https://github.com/Abdallah2A" target="_blank" class="github-link floating">
-								<i class="fa-brands fa-github"></i>
-							</a>
-						</div>
+            <div class="content" id="certifications">
+                <div class="content-header">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Certifications</h3>
+                </div>
+                <div class="cards-container">
+                    <div class="timeline-card">
+                        <h4>Supervised Machine Learning</h4>
+                        <p>DeepLearning.AI (2023)</p>
+                        <a href="https://coursera.org/verify/6CVFAV5R7AXQ" target="_blank" class="certification-link">Verify</a>
                     </div>
-                    <!-- Education -->
-                    <div id="education" class="content">
-                        <div class="timeline">
-                            <div class="timeline_card">
-                                <div class="timeline_info">
-                                    <div class="timeline_title"><strong>Primary (2007 - 2013)</strong></div>
-                                    <p>Abdallah El-nadeem</p>
-                                </div>
-                            </div>
-                            <div class="timeline_card">
-                                <div class="timeline_info">
-                                    <div class="timeline_title"><strong>Preparatory (2013 - 2016)</strong></div>
-                                    <p>Sameh El-saeed Sports</p>
-                                </div>
-                            </div>
-                            <div class="timeline_card">
-                                <div class="timeline_info">
-                                    <div class="timeline_title"><strong>Secondary (2016 - 2019)</strong></div>
-                                    <p>Sameh El-saeed Sports</p>
-                                </div>
-                            </div>
-                            <div class="timeline_card">
-                                <div class="timeline_info">
-                                    <div class="timeline_title"><strong>College (2020 - 2024)</strong></div>
-                                    <p>FCI, CS Department</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="timeline-card">
+                        <h4>Advanced Learning Algorithms</h4>
+                        <p>DeepLearning.AI (2024)</p>
+                        <a href="https://coursera.org/verify/62JTK3FC3SMM" target="_blank" class="certification-link">Verify</a>
                     </div>
-                    <!-- Certifications -->
-                    <div id="certifications" class="content">
-                        <div class="cards-container">
-                            <div class="card">
-                                <h3>Supervised Machine Learning</h3>
-                                <p>DeepLearning.AI (2023)</p>
-                                <a href="https://coursera.org/verify/6CVFAV5R7AXQ" target="_blank" class="certification-link">Verify</a>
-                            </div>
-                            <div class="card">
-                                <h3>Advanced Learning Algorithms</h3>
-                                <p>DeepLearning.AI (2024)</p>
-                                <a href="https://coursera.org/verify/62JTK3FC3SMM" target="_blank" class="certification-link">Verify</a>
-                            </div>
-			    <div class="card">
-                                <h3>Machine Learning in Production</h3>
-                                <p>DeepLearning.AI (2025)</p>
-                                <a href="" target="_blank" class="certification-link">Verify</a>
-                            </div>
-                            <div class="card">
-                                <h3>OpenCV Bootcamp</h3>
-                                <p>OpenCV University (2024)</p>
-                                <a href="https://courses.opencv.org/certificates/4bf9c666903a472bbdc0ac90913d282f" target="_blank" class="certification-link">Verify</a>
-                            </div>
-                        </div>
+                    <div class="timeline-card">
+                        <h4>Unsupervised Learning, Recommenders, Reinforcement Learning</h4>
+                        <p>DeepLearning.AI (2024)</p>
+                        <a href="" target="_blank" class="certification-link">Verify</a>
                     </div>
-
-<!-- Skills -->
-<div id="skills" class="content">
-    <div class="skills-container">
-        <div class="skill-category">
-            <h3>Data Collection, Cleaning &amp; Visualization</h3>
-            <p>Scrapy, Selenium, Requests, Pandas, NumPy, Matplotlib, Seaborn, MySQL</p>
-        </div>
-        <div class="skill-category">
-            <h3>Machine Learning &amp; Data Science</h3>
-            <p>Python, C++, Scikit-learn, PyTorch, Hugging Face, Ultralytics (YOLO)</p>
-        </div>
-        <div class="skill-category">
-            <h3>Computer Vision</h3>
-            <p>OpenCV, Image Processing</p>
-        </div>
-        <div class="skill-category">
-            <h3>Model Deployment &amp; Monitoring</h3>
-            <p>Docker, FastAPI, AWS, ZenML, CI/CD</p>
-        </div>
-        <div class="skill-category">
-            <h3>Collaboration &amp; Core Concepts</h3>
-            <p>Git/GitHub, Google Colab, OOP, Data Structures, Algorithms, Parallel Programming, HTML, CSS, Custom TKinter</p>
-        </div>
-    </div>
-</div>
-
-
-                    <!-- Projects -->
-                    <div id="projects" class="content">
-                        <div class="cards-container">
-                            <div class="card">
-                                <a class="project-link">Colonoscopy</a>
-                                <p>Real-time AI-based object detection for medical imaging.</p>
-                            </div>
-                            <div class="card">
-                                <a href="https://github.com/Abdallah2A/Image-Duplicate-Detection-and-Removal" class="project-link">Duplicate Image Detection Tool</a>
-                                <p>Python tool for efficient image deduplication using hashing techniques.</p>
-                            </div>
-                            <div class="card">
-                                <a href="https://github.com/Abdallah2A/E_commerce_scraper" class="project-link">E-Commerce Scraper</a>
-                                <p>Web-scraping app that scrape and compare e-commerce products.</p>
-                            </div>
-                            <div class="card">
-                                <a href="https://github.com/Abdallah2A/A-Search-Algorithm-in-Python" class="project-link">A* Search Algorithm</a>
-                                <p>Pathfinding algorithm for Egyptian Cities.</p>
-                            </div>
-                            <div class="card">
-                                <a href="https://github.com/Abdallah2A/SkipList" class="project-link">SkipList Data Management</a>
-                                <p>Efficient rectangle storage and retrieval in Java.</p>
-                            </div>
-                        </div>
+                    <div class="timeline-card">
+                        <h4>Machine Learning in Production</h4>
+                        <p>DeepLearning.AI (2025)</p>
+                        <a href="" target="_blank" class="certification-link">Verify</a>
                     </div>
-
-                    <!-- Languages -->
-                    <div id="languages" class="content">
-                        <div class="language-progress">
-                            <div class="progress-item">
-                                <h3>Arabic</h3>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 100%;"></div>
-                                </div>
-                                <p>Native</p>
-                            </div>
-                            <div class="progress-item">
-                                <h3>English</h3>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 80%;"></div>
-                                </div>
-                                <p>Very Good (CEFR C1)</p>
-                            </div>
+                    <div class="timeline-card">
+                        <h4>OpenCV Bootcamp</h4>
+                        <p>OpenCV University (2024)</p>
+                        <a href="https://courses.opencv.org/certificates/4bf9c666903a472bbdc0ac90913d282f" target="_blank" class="certification-link">Verify</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content" id="skills">
+                <div class="content-header">
+                    <i class="fas fa-tools"></i>
+                    <h3>Skills</h3>
+                </div>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h4>Programming Languages</h4>
+                        <p>Python, C++</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Machine Learning & Data Science</h4>
+                        <p>Scikit-learn, PyTorch, YOLO</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Data Analysis & Visualization</h4>
+                        <p>Pandas, NumPy, Matplotlib, Seaborn</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Computer Vision</h4>
+                        <p>OpenCV, Image Processing</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Web Scraping & Data Acquisition</h4>
+                        <p>Scrapy, Selenium, Requests, Kaggle</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Deployment & MLOps</h4>
+                        <p>Docker, FastAPI, AWS, ZenML, CI/CD, Git/GitHub</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Software Engineering</h4>
+                        <p>OOP, Data Structures, Algorithms, Parallel Programming</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content" id="projects">
+                <div class="content-header">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>Projects</h3>
+                </div>
+                <div class="cards-container">
+                    <div class="timeline-card">
+                        <img src="images/colon_watcher_logo.png" alt="Screenshot of Colon Watcher UI" class="timeline-img"/>
+                        <h4>Colon Watcher (Graduation Project A+ Grade)</h4>
+                        <p>Real-time colonoscopy polyp detector: 97% F1, mAP@0.5 is 0.98 on 100K+ images, processing 100GB+ data</p>
+                        <p><strong>Role:</strong> Handled data (collecting, cleaning, augmentation), model development, and deployment</p>
+                        <p><strong>Tools:</strong> Ultralytics (YOLOv10), OpenCV, Docker, FastAPI, ZenML, Google Colab, GitHub</p>
+                        <a href="https://github.com/Abdallah2A/colon_watcher" target="_blank" class="certification-link">GitHub</a>
+                    </div>
+                    <div class="timeline-card">
+                        <img src="images/sphinx_value_vision_logo.png" alt="Screenshot of Sphinx Value Vision UI" class="timeline-img"/>
+                        <h4>Sphinx Value Vision</h4>
+                        <p>Egyptian house price prediction on scraped custom dataset with 100K+ apartments, achieving 0.83 R² score</p>
+                        <p><strong>Role:</strong> Handled data (scraping, cleaning, feature engineering), model development, and deployment</p>
+                        <p><strong>Tools:</strong> PyTorch, Scrapy, Docker, FastAPI, ZenML, GitHub</p>
+                        <a href="https://github.com/Abdallah2A/sphinx_value_vision" target="_blank" class="certification-link">GitHub</a>
+                    </div>
+                    <div class="timeline-card">
+                        <img src="images/intelligent_snake_logo.png" alt="Screenshot of Intelligent Snake UI" class="timeline-img"/>
+                        <h4>Intelligent Snake</h4>
+                        <p>AI snake game solver with RL, achieving 80 average score and 300 average reward</p>
+                        <p><strong>Role:</strong> Environment build, model development, and deployment</p>
+                        <p><strong>Tools:</strong> PyGame, PyTorch, ZenML</p>
+                        <a href="https://github.com/Abdallah2A/intelligent_snake" target="_blank" class="certification-link">GitHub</a>
+                    </div>
+                    <div class="timeline-card">
+                        <img src="images/image_interpreter_logo.png" alt="Screenshot of Image Interpreter UI" class="timeline-img"/>
+                        <h4>Image Interpreter</h4>
+                        <p>Image captioning system, achieving 0.52 BLEU-1 and 0.33 BLEU-2</p>
+                        <p><strong>Role:</strong> Model development, and deployment</p>
+                        <p><strong>Tools:</strong> PyTorch, ZenML, FastAPI, Docker</p>
+                        <a href="https://github.com/Abdallah2A/image_interpreter" target="_blank" class="certification-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content" id="languages">
+                <div class="content-header">
+                    <i class="fas fa-language"></i>
+                    <h3>Languages</h3>
+                </div>
+                <div class="language-progress">
+                    <div class="progress-item">
+                        <h4>Arabic</h4>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 100%;"></div>
                         </div>
+                        <p>Native</p>
+                    </div>
+                    <div class="progress-item">
+                        <h4>English</h4>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                        <p>Very Good (CEFR C1)</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <script src="scripts/background.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 </html>
